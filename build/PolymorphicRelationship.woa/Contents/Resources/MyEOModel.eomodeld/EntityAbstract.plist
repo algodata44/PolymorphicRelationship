@@ -1,0 +1,15 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = refEntityID; name = refEntityID; prototypeName = id; }, 
+        {columnName = refEntityName; name = refEntityName; prototypeName = varchar50; }
+    ); 
+    attributesUsedForLocking = (id); 
+    className = "your.app.model.EntityAbstract"; 
+    classProperties = (refEntityID, refEntityName); 
+    externalName = Entity; 
+    fetchSpecificationDictionary = {}; 
+    isAbstractEntity = Y; 
+    name = EntityAbstract; 
+    primaryKeyAttributes = (id); 
+}

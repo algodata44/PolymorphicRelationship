@@ -1,0 +1,26 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {columnName = refEntityID; name = refEntityID; prototypeName = id; }, 
+        {columnName = refEntityName; name = refEntityName; prototypeName = varchar50; }
+    ); 
+    attributesUsedForLocking = (id); 
+    className = "your.app.model.EntitySub"; 
+    classProperties = (refEntityName, relation); 
+    externalName = Entity; 
+    fetchSpecificationDictionary = {}; 
+    name = EntitySub; 
+    parent = EntityAbstract; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Relation; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = refEntityID; }); 
+            name = relation; 
+        }
+    ); 
+    restrictingQualifier = "(refEntityName='EntitySub')"; 
+}

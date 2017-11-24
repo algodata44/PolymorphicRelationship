@@ -1,0 +1,19 @@
+{
+    attributes = ({allowsNull = N; name = id; prototypeName = id; }); 
+    attributesUsedForLocking = (id); 
+    className = "your.app.model.Relation"; 
+    classProperties = (entitySubs, id); 
+    externalName = Relation; 
+    fetchSpecificationDictionary = {}; 
+    name = Relation; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = EntitySub; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = refEntityID; sourceAttribute = id; }); 
+            name = entitySubs; 
+        }
+    ); 
+}

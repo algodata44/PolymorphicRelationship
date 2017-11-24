@@ -1,0 +1,26 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {URL = "jdbc:h2:~/Polymorphic"; }; 
+    entities = (
+        {className = "your.app.model.EntityAbstract"; name = EntityAbstract; }, 
+        {
+            className = "your.app.model.EntitySub"; 
+            name = EntitySub; 
+            parent = EntityAbstract; 
+        }, 
+        {className = "your.app.model.Relation"; name = Relation; }
+    ); 
+    userInfo = {
+        "_EntityModeler" = {
+            activeDatabaseConfigName = Default; 
+            databaseConfigs = {
+                Default = {
+                    adaptorName = JDBC; 
+                    connectionDictionary = {URL = "jdbc:h2:~/Polymorphic"; }; 
+                    prototypeEntityName = EOJDBCH2Prototypes; 
+                }; 
+            }; 
+        }; 
+    }; 
+}
